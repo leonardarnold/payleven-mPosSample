@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">mPosSample</string>
+    <string name="device_activity_name">Select device</string>
+    <string name="login_activity_name">Login</string>
+    <string name="result_activity_name">Result</string>
+    <string name="result_details_activity_name">Receipt</string>
+    <string name="signature_activity_name">Signature</string>
+
+
+    <string name="boatrental_boat_adria">Boat Adria\n25€/hour</string>
+    <string name="boatrental_motorboat">Motor boat\n35€/hour</string>
+    <string name="boatrental_sailing_boat">Sailing boat\n40€/hour</string>
+    <string name="boatrental_pay_button">Continue payment</string>
+
+    <string name="login_username_hint">Username</string>
+    <string name="login_password_hint">Password</string>
+    <string name="login_button">Login</string>
+
+    <string name="payment_amount_hint">Amount</string>
+    <string name="payment_currency_hint">Currency ISO 4217</string>
+    <string name="payment_pay_button">Pay</string>
+    <string name="payment_cancel_button">Cancel</string>
+    <string name="payment_finish">Finish</string>
+
+    <string name="signature_confirm_message">Confirm customer\'s signature</string>
+    <string name="signature_decline_button">Decline</string>
+    <string name="signature_confirm_button">Confirm</string>
+
+    <string name="result_show_details">Show details</string>
+    <string name="result_continue">Continue</string>
+    <string name="result_payment_approved">PAYMENT SUCCESSFULL</string>
+    <string name="result_payment_canceled">PAYMENT CANCELED</string>
+    <string name="result_payment_declined">PAYMENT DECLINED</string>
+
+    <string name="select_default_device">Please select default device</string>
+    <string name="no_devices_found">\nBluetooth pairing\n\n
+        Before proceeding with the integration and testing make sure
+        you have paired the card reader in the bluetooth settings on your Android device.\n\n
+
+    1. Make sure the device is charged and turned on.\n\n
+    2. Press \'0\' key on the card reader for 5 sec and make sure the card reader
+        has entered the pairing mode (there will be a corresponding sign on the screen).\n\n
+    3. Go to the bluetooth settings of your Android device and turn on the \'device scanning\' mode.\n\n
+    4. Select the discovered payleven card reader and follow the instructions on both devices to
+        finish the pairing process.
+    </string>
+</resources>

@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:id="@+id/loading_progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <EditText
+        android:textSize="50sp"
+        android:id="@+id/amount_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:maxLength="10"
+        android:hint="@string/payment_amount_hint"
+        android:inputType="number"
+        android:layout_marginBottom="10dp"
+        android:clickable="false"/>
+
+    <!-- we use a hardcoded currency for now !-->
+    <EditText
+        android:id="@+id/currency_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/payment_currency_hint"
+        android:text="GBP"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/payment_pay_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/payment_pay_button"
+            android:onClick="onPayClicked"/>
+        <TextView
+            android:textSize="20sp"
+            android:gravity="center"
+            android:id="@+id/currency_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="EUR/CENT"/>
+        <Button
+            android:id="@+id/payment_cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/payment_cancel_button"
+            android:enabled="true"
+            android:onClick="onCancelClicked"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <de.leonardarnold.mpossample.view.PaymentNumpadView
+        android:id="@+id/payment_numpad_view"
+        android:layout_width="match_parent"
+        android:keyTextColor="@android:color/black"
+        android:keyBackground="@drawable/key_background"
+        android:background="#fff3f3f3"
+        android:layout_height="wrap_content"
+        android:shadowRadius="0"
+        />
+
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="action_list">
+        <item>Numpad</item>
+        <item>BoatRental</item>
+    </string-array>
+</resources>

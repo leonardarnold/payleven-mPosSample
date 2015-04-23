@@ -1,0 +1,42 @@
+apply plugin: 'com.android.application'
+
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "de.leonardarnold.mpossample"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+repositories {
+    maven{
+        // payleven maven repository
+        url 'https://download.payleven.com/maven'
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:22.0.0'
+    compile 'com.squareup.dagger:dagger:1.2.2'
+    provided 'com.squareup.dagger:dagger-compiler:1.2.2'
+    //required for payleven library
+    compile 'com.google.code.gson:gson:2.3'
+    //Use the specific library version here
+    compile 'de.payleven.payment:mpos:1.0.0@jar'
+    //This is a helper payleven library.
+    compile 'de.payleven:psp-library:1.0.0@aar'
+    compile 'com.jakewharton:butterknife:6.1.0'
+}
