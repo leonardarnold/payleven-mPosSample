@@ -2,7 +2,7 @@
 #mPosSample
 This is a sample implementation of the payleven mPOS-SDK.
 My first question was: How to pass the valid payleven instance through all activities?
-I'm doing it with dependency injection using dagger. Read more in my Blog.
+I'm doing it with dependency injection using dagger. Read more in my Blog: http://leonardarnold.de/android/paylevens-mpos-sdk/ .
 You find the official payleven example here: https://github.com/payleven/mPOS-SDK-Android.
 
 ##Prerequisites: 
